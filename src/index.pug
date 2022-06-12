@@ -1,13 +1,170 @@
 include pug/libs/_libs
 
 doctype html
-html(lang='en')
-    include pug/_head
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title MAKET3 DESIGN
+    body 
     body
-        .container
-            h1 Hello from Webpack
-            h2.container__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsam!
-            +image('angular')
-            +image('webpack')
-            .block
-            .user
+        header 
+            .left-side Damadams
+            .right-side-navigation 
+                ul.navigation-list
+                    li.active Home 
+                        p
+                    li About
+                    li Latest Works
+                    li Testimonials
+                    li Contact
+
+        main 
+            .first-section-home 
+                .container 
+                    .left-side-home 
+                        p Hello,
+                        .name 
+                            span I’m 
+                            span.color Daniella Adams
+                        .text3 I’m a Graphics Designer,Designng has become my everyday affair. masting styles,grids cant be less interesting.
+                        button.button-pink
+                           .button-pink-text Download CV
+
+                    .right-side-home 
+                        img(src="../images/first-section-photo.png", alt="first-section-photo")
+
+            .second-section-about 
+                .container 
+                    .left-side-about 
+                        img(src="../images/second-section-photo.png", alt="second-section-photo")
+                    .right-side-about 
+                        h2 I am a creative Graphic and UI Designer
+                        p I’m a Graphics Designer,Designng has become my everyday affair. masting styles,grids cant be less interesting,Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        .right-side-about-button
+                            button.button-pink
+                                .button-pink-text Download CV
+                            button.button-white
+                                .button-white-text View Portfolio
+                        .right-side-progress 
+                            .right-side-progress-ps
+                                .progress-ps-logo
+                                    .progress-logo-ps-text Ps 
+                                .progress-bar 
+                                    .progress-ps-percentage 70%
+                                    .progress-bar-passive 
+                                        .progress-ps-bar-active
+                            .right-side-progress-figma
+                                img(src="../images/Figma icon.png", alt="figma")
+                                .progress-bar 
+                                    .progress-figma-percentage 50%
+                                    .progress-bar-passive 
+                                        .progress-figma-bar-active
+                            .right-side-progress-ai 
+                                .right-side-progress-ai
+                                .progress-ai-logo
+                                    .progress-logo-ai-text Ai 
+                                .progress-bar 
+                                    .progress-ai-percentage 80%
+                                    .progress-bar-passive 
+                                        .progress-ai-bar-active
+                                     
+            .third-section-rating 
+                .rating 
+                    .rating-number 81
+                    .rating-text HAPPY CUSTOMERS
+                .rating
+                    .rating-number 97+
+                    .rating-text Completed Projects                    
+                .rating 
+                    .rating-number 50
+                    .rating-text Awards Won
+
+            .fourth-section-latest-work 
+                .container 
+                    .latest-work-block 
+                        h2 Latest work
+                        .latest-work-cards-list  
+                            .latest-work-card
+                                .card-image-block
+                                    img(src="../images/card1.png", alt="card1") 
+                                    h6 Project title
+                                    p UI, Art drection
+                            .latest-work-card
+                                .card-image-block
+                                    img(src="../images/card2.png", alt="card2") 
+                                    h6 Project title
+                                    p UI, Art drection
+                            .latest-work-card
+                                .card-image-block
+                                    img(src="../images/card3.png", alt="card3") 
+                                    h6 Project title
+                                    p UI, Art drection
+                            .latest-work-card
+                                 .card-image-block
+                                    img(src="../images/card4.png", alt="card4") 
+                                    h6 Project title
+                                    p UI, Art drection
+                            .latest-work-card
+                                 .card-image-block
+                                    img(src="../images/card5.png", alt="card5") 
+                                    h6 Project title
+                                    p UI, Art drection
+                            .latest-work-card
+                                 .card-image-block
+                                    img(src="../images/card6.png", alt="card6") 
+                                    h6 Project title
+                                    p UI, Art drection
+
+            .fifth-section-testimonial
+                .fifth-section-testimonial-block 
+                    .fifth-section-testimonial-block-text
+                        .fifth-section-testimonial-block-text-photo
+                            .fifth-section-testimonial-block-text-photo-first
+                                img(src="../images/fifth-section-photo2.png", alt="fifth-setion-photo2")
+                            .fifth-section-testimonial-block-text-photo-second
+                                img(src="../images/fifth-section-photo.png", alt="fifth-section-photo")
+                        .fifth-section-testimonial-block-text-first 
+                            h4 Adams Ademola
+                        .fifth-section-testimonial-block-text-second 
+                            p Happy Client
+                        .fifth-section-testimonial-block-text-third 
+                            p “Everyone working in the office is very knowledgeable about all types of dental work and options for your individual needs.”
+                        .fifth-section-testimonial-block-text-stars 
+                            img(src="../images/Star 1.png", alt="star")
+                            img(src="../images/Star 1.png", alt="star")
+                            img(src="../images/Star 1.png", alt="star")
+                            img(src="../images/Star 1.png", alt="star")
+                            img(src="../images/Star 1.png", alt="star")
+                    
+                    .fifth-section-testimonial-block-points
+                        .fifth-section-testimonial-block-points-list
+                            .fifth-section-testimonial-block-points-active 
+                            .fifth-section-testimonial-block-points-pasive 
+                            .fifth-section-testimonial-block-points-pasive
+
+            .sixth-section-adress
+                .container 
+                    .sixth-section-adress-block
+                        h2 Get in Touch
+                        .sixth-section-adress-block-list 
+                            .sixth-section-adress-block-list-mail
+                                .sixth-section-adress-block-list-mail-text Your Email Address
+                                .sixth-section-adress-block-list-mail-adress-box1
+                                    span something@website.com
+                                .sixth-section-adress-block-list-mail-text Subject
+                                .sixth-section-adress-block-list-mail-adress-box2
+                                    p Question about your article
+                                .sixth-section-adress-block-list-mail-adress-box3
+                                    p Your message starts with…
+                                button.button-pink
+                                    .button-pink-text Send
+                            .sixth-section-adress-block-list-map
+                                img(src="../images/map.png", alt="map")
+        footer 
+            .footer-contact-info 
+            .footer-social-icon 
+                <i class="fa-brands fa-twitter"></i>
+                
+
