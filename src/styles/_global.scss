@@ -95,6 +95,11 @@ header {
   width: 621px;
   height: 692px;
   background-image: url(../images/first-section-background.png);
+  background-position: center;
+  transform: translate(125px, -40px);
+}
+.right-side-home img {
+  transform: translate(-55px, 10px);
 }
 
 .left-side-home {
@@ -170,6 +175,11 @@ button {
   width: 410px;
   margin-right: 174px;
   background: url(../images/second-section-background.png);
+  background-position: center;
+  transform: translate(62px, 10px);
+    & img {
+      transform: translate(-58px, 10px);
+    }
 }
 
 
@@ -571,7 +581,56 @@ button {
 
 
 /***************HEADER**************/
-header {
+footer {
   background: rgba(251, 63, 92, 0.9);
   padding: 67px 195px;
 }
+
+.footer-contact-info {
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contact-info-block {
+  border-right: 4px solid #F8EEEF;
+  display: flex;
+    & i {
+      margin-right: 20px;
+      width: 24px;
+      height: 23px;  
+      color: #F8EEEF;
+    }
+}
+
+.footer-contact-info :last-child {
+  border: unset;
+}
+
+.footer-contact-info-text,
+.footer-contact-info-text1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  color: #F8EEEF;
+  margin-right: 20px;
+}
+
+.footer-contact-info-text1 {
+  margin-right: unsetb;
+}
+
+
+.footer-social-icon-list {
+   display: flex;
+   justify-content: center;
+    & i {
+      width: 24px;
+      height: 23px;  
+      color: #F8EEEF;
+      margin-right: 30px;
+    }
+}
+
